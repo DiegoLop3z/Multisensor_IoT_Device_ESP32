@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="900" viewBox="0 0 1480 900" font-family="DejaVu Sans, Arial, sans-serif">
+<defs>
+<marker id="mtel" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1c71d8"/></marker>
+<marker id="mctl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e66100"/></marker>
+<marker id="mmod" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#16a34a"/></marker>
+<marker id="mgry" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#555"/></marker>
+</defs>
+<rect width="1480" height="900" fill="#ffffff"/>
+<text x="40" y="44" font-size="24" font-weight="bold" fill="#1a1a1a">Arquitectura del Sistema Multisensor con Servidor Web ESP32</text>
+<text x="40" y="70" font-size="14" fill="#555">Práctica 2 (Unidad 2) · Hotspot Wi-Fi Propio (192.168.4.1) · Servidor HTTP Nativo (GET / POST) · 4 Modos con LED RGB y Relé</text>
+<rect x="35" y="105" width="340" height="620" rx="10" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+<text x="205.0" y="135" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle">1. Sensores y Actuadores Físicos</text>
+<text x="205.0" y="155" font-size="12" font-weight="normal" fill="#64748b" text-anchor="middle">Conectados en Protoboard al ESP32</text>
+<rect x="51" y="180" width="308" height="95" rx="7" fill="#ffffff" stroke="#1c71d8" stroke-width="2"/>
+<text x="63" y="202" font-size="13" font-weight="bold" fill="#1c71d8" text-anchor="start">GY-SHT41 (I²C 0x44) / DHT11</text>
+<text x="63" y="222" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">GPIO 21 (SDA) / GPIO 22 (SCL)</text>
+<text x="63" y="240" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Temperatura (°C) y Humedad (%)</text>
+<text x="63" y="258" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Muestreo cada 2000 ms</text>
+<rect x="51" y="290" width="308" height="95" rx="7" fill="#ffffff" stroke="#1c71d8" stroke-width="2"/>
+<text x="63" y="312" font-size="13" font-weight="bold" fill="#1c71d8" text-anchor="start">Fotocelda LDR + R 10kΩ</text>
+<text x="63" y="332" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">GPIO 34 (ADC1_CH6 · 12 bits)</text>
+<text x="63" y="350" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Media móvil 8 muestras → 0..100%</text>
+<text x="63" y="368" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Estados: OSCURO / MEDIO / ILUMINADO</text>
+<rect x="51" y="400" width="308" height="80" rx="7" fill="#ffffff" stroke="#1c71d8" stroke-width="2"/>
+<text x="63" y="422" font-size="13" font-weight="bold" fill="#1c71d8" text-anchor="start">Sensor de Movimiento PIR</text>
+<text x="63" y="442" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">GPIO 35 (Entrada digital 3.3V)</text>
+<text x="63" y="460" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Detección + ventana de retención 15 s</text>
+<rect x="51" y="495" width="308" height="95" rx="7" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+<text x="63" y="517" font-size="13" font-weight="bold" fill="#16a34a" text-anchor="start">LED RGB Indicador de Modo</text>
+<text x="63" y="537" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">GPIO 25 (R), GPIO 26 (G), GPIO 27 (B)</text>
+<text x="63" y="555" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Azul: Manual · Verde: Auto LDR</text>
+<text x="63" y="573" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Amarillo: PIR · Rojo: Clima</text>
+<rect x="51" y="605" width="308" height="95" rx="7" fill="#ffffff" stroke="#e66100" stroke-width="2"/>
+<text x="63" y="627" font-size="13" font-weight="bold" fill="#e66100" text-anchor="start">Módulo Relé + OLED SSD1306</text>
+<text x="63" y="647" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">GPIO 23 (Relé) + I²C 0x3C (OLED)</text>
+<text x="63" y="665" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Conmutación con histéresis y</text>
+<text x="63" y="683" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">confirmación física del estado real</text>
+<rect x="435" y="105" width="455" height="620" rx="10" fill="#eef3fb" stroke="#1f3a5f" stroke-width="2"/>
+<text x="662.5" y="135" font-size="17" font-weight="bold" fill="#1f3a5f" text-anchor="middle">2. Microcontrolador ESP32 DevKit V1</text>
+<text x="662.5" y="155" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">Firmware No Bloqueante (millis) + Hotspot + WebServer</text>
+<rect x="453" y="175" width="419" height="95" rx="7" fill="#ffffff" stroke="#1f3a5f" stroke-width="2"/>
+<text x="467" y="199" font-size="13.5" font-weight="bold" fill="#1f3a5f" text-anchor="start">Punto de Acceso Wi-Fi Propio (WiFi.softAP)</text>
+<text x="467" y="220" font-size="12" font-weight="normal" fill="#333" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">• Red (SSID): ESP32-Multisensor (WPA2)</text>
+<text x="467" y="240" font-size="12" font-weight="normal" fill="#333" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">• Dirección IP fija: 192.168.4.1</text>
+<text x="467" y="258" font-size="11.5" font-weight="normal" fill="#555" text-anchor="start">• Sin dependencia de routers ni brokers externos</text>
+<rect x="453" y="285" width="419" height="215" rx="7" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+<text x="467" y="309" font-size="13.5" font-weight="bold" fill="#16a34a" text-anchor="start">Máquina de Estados — 4 Modos de Operación</text>
+<text x="467" y="333" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="start">Modo 0 — MANUAL (LED Azul):</text>
+<text x="467" y="350" font-size="11.5" font-weight="normal" fill="#475569" text-anchor="start">El usuario enciende/apaga el relé desde la web.</text>
+<text x="467" y="373" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="start">Modo 1 — AUTO_LDR (LED Verde):</text>
+<text x="467" y="390" font-size="11.5" font-weight="normal" fill="#475569" text-anchor="start">Relé ON si Luz &lt; 35% · OFF si Luz &gt; 45%.</text>
+<text x="467" y="413" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="start">Modo 2 — AUTO_PIR (LED Amarillo):</text>
+<text x="467" y="430" font-size="11.5" font-weight="normal" fill="#475569" text-anchor="start">Relé ON con movimiento PIR (retención 15 s).</text>
+<text x="467" y="453" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="start">Modo 3 — AUTO_CLIMA (LED Rojo):</text>
+<text x="467" y="470" font-size="11.5" font-weight="normal" fill="#475569" text-anchor="start">Relé ON si Temp &gt;= 28°C o Humedad &gt;= 75%.</text>
+<rect x="453" y="515" width="419" height="195" rx="7" fill="#ffffff" stroke="#e66100" stroke-width="2"/>
+<text x="467" y="539" font-size="13.5" font-weight="bold" fill="#e66100" text-anchor="start">Servidor Web Nativo (WebServer.h · Puerto 80)</text>
+<text x="465" y="565" font-size="11.5" font-weight="bold" fill="#e66100" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GET  /</text>
+<text x="577" y="565" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Sirve Dashboard HTML5 + CSS3 (PROGMEM)</text>
+<text x="465" y="599" font-size="11.5" font-weight="bold" fill="#e66100" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GET  /status</text>
+<text x="577" y="599" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Entrega JSON con sensores, modo y relé</text>
+<text x="465" y="633" font-size="11.5" font-weight="bold" fill="#e66100" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">POST /mode</text>
+<text x="577" y="633" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Recibe mode=0..3 → cambia modo y RGB</text>
+<text x="465" y="667" font-size="11.5" font-weight="bold" fill="#e66100" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">POST /relay</text>
+<text x="577" y="667" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">Recibe state=ON|OFF → relé en Manual</text>
+<line x1="375" y1="240" x2="435" y2="240" stroke="#1c71d8" stroke-width="2.6" marker-end="url(#mtel)"/>
+<line x1="435" y1="520" x2="375" y2="520" stroke="#e66100" stroke-width="2.6" marker-end="url(#mctl)"/>
+<rect x="1075" y="105" width="370" height="620" rx="10" fill="#fdf8f3" stroke="#8f3b0b" stroke-width="2"/>
+<text x="1260.0" y="135" font-size="17" font-weight="bold" fill="#8f3b0b" text-anchor="middle">3. Interfaz Web (Navegador)</text>
+<text x="1260.0" y="155" font-size="12" font-weight="normal" fill="#555" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace">http://192.168.4.1 (Laptop o Smartphone)</text>
+<rect x="1093" y="185" width="334" height="115" rx="7" fill="#ffffff" stroke="#1c71d8" stroke-width="2"/>
+<text x="1107" y="209" font-size="13" font-weight="bold" fill="#1c71d8" text-anchor="start">Tarjetas de Telemetría (HTML + CSS)</text>
+<text x="1107" y="231" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Temperatura (°C) y Humedad (%)</text>
+<text x="1107" y="251" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Iluminación LDR (% + barra + estado)</text>
+<text x="1107" y="271" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Estado del PIR (MOVIMIENTO / LIBRE)</text>
+<rect x="1093" y="320" width="334" height="115" rx="7" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+<text x="1107" y="344" font-size="13" font-weight="bold" fill="#16a34a" text-anchor="start">Selector de Modo e Indicador RGB</text>
+<text x="1107" y="366" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Vista previa del color del LED RGB activo</text>
+<text x="1107" y="386" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• 4 Botones interactivos (POST /mode)</text>
+<text x="1107" y="406" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Actualiza regla activa en pantalla</text>
+<rect x="1093" y="455" width="334" height="120" rx="7" fill="#ffffff" stroke="#e66100" stroke-width="2"/>
+<text x="1107" y="479" font-size="13" font-weight="bold" fill="#e66100" text-anchor="start">Control del Módulo Relé (Lazo Cerrado)</text>
+<text x="1107" y="501" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Muestra confirmación real: ON / OFF</text>
+<text x="1107" y="521" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Botones ENCENDER / APAGAR (POST /relay)</text>
+<text x="1107" y="541" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Activos en Modo Manual; bloqueados en Auto</text>
+<rect x="1093" y="595" width="334" height="110" rx="7" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+<text x="1107" y="619" font-size="13" font-weight="bold" fill="#475569" text-anchor="start">Sincronización Ligera sin Recarga</text>
+<text x="1107" y="641" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Consulta GET /status cada 1.5 s</text>
+<text x="1107" y="661" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Refleja cambios físicos confirmados por</text>
+<text x="1107" y="681" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">  la ESP32 sin parpadeo de página</text>
+<line x1="894" y1="285" x2="1071" y2="285" stroke="#1c71d8" stroke-width="2.6" marker-end="url(#mtel)"/>
+<text x="982.5" y="256" font-size="11" font-weight="bold" fill="#1c71d8" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace">GET / y GET /status</text>
+<text x="982.5" y="273" font-size="11" font-weight="normal" fill="#444" text-anchor="middle">HTML/CSS + JSON</text>
+<line x1="1071" y1="445" x2="894" y2="445" stroke="#e66100" stroke-width="2.6" marker-end="url(#mctl)"/>
+<text x="982.5" y="416" font-size="11" font-weight="bold" fill="#e66100" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace">POST /mode y /relay</text>
+<text x="982.5" y="433" font-size="11" font-weight="normal" fill="#444" text-anchor="middle">Comandos + Confirmación</text>
+<rect x="35" y="750" width="1410" height="120" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="55" y="778" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="start">Flujo de Operación y Confirmación de Estado:</text>
+<text x="55" y="804" font-size="12.5" font-weight="normal" fill="#334155" text-anchor="start">1. La ESP32 inicia su Hotspot Wi-Fi (192.168.4.1) y lee continuamente SHT41/DHT11, LDR (GPIO 34) y PIR (GPIO 35) mediante millis().</text>
+<text x="55" y="827" font-size="12.5" font-weight="normal" fill="#334155" text-anchor="start">2. El usuario abre http://192.168.4.1 en su navegador (GET /) y visualiza todas las variables actualizadas vía GET /status.</text>
+<text x="55" y="850" font-size="12.5" font-weight="normal" fill="#334155" text-anchor="start">3. Al elegir un modo (POST /mode) o conmutar el relé en Modo Manual (POST /relay), la ESP32 actúa físicamente sobre el LED RGB y el Relé y responde con el estado real confirmado.</text>
+</svg>

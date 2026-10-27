@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1220" viewBox="0 0 1480 1220" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1480" height="1220" fill="#ffffff"/>
+<text x="40" y="44" font-size="24" font-weight="bold" fill="#1a1a1a">Diagrama Electrónico de Conexiones — Sistema Multisensor ESP32</text>
+<text x="40" y="70" font-size="14" fill="#555">Práctica 2 (Unidad 2) · SHT41 + OLED (I²C GPIO 21/22) · LDR (GPIO 34 ADC1) · PIR (GPIO 35) · LED RGB (GPIO 25/26/27) · Relé (GPIO 23)</text>
+<rect x="580" y="105" width="300" height="625" rx="12" fill="#1f3a5f" stroke="#0f2238" stroke-width="2"/>
+<path d="M680 120 h20 v14 h20 v-14 h20 v14 h20 v-14 h20" fill="none" stroke="#c9a227" stroke-width="3"/>
+<rect x="670" y="148" width="120" height="230" rx="4" fill="#c0c4c8" stroke="#8a8f94" stroke-width="2"/>
+<text x="730" y="260" font-size="11" font-weight="bold" fill="#333" text-anchor="middle">ESP-WROOM-32</text>
+<text x="730" y="415" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">ESP32 DevKit V1</text>
+<text x="730" y="437" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="middle">(Hotspot Wi-Fi 192.168.4.1)</text>
+<rect x="700" y="726" width="60" height="20" rx="3" fill="#9aa0a6" stroke="#5f6368"/>
+<text x="730" y="764" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">USB (Alimentación 5V + Datos)</text>
+<circle cx="596" cy="185" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="608" y="189" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="start">EN</text>
+<circle cx="864" cy="185" r="6.5" fill="#26a269" stroke="#fff" stroke-width="1.5"/>
+<text x="852" y="189" font-size="12" font-weight="bold" fill="#fff" text-anchor="end">D23</text>
+<circle cx="596" cy="221" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="608" y="225" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="start">VP</text>
+<circle cx="864" cy="221" r="6.5" fill="#e5a50a" stroke="#fff" stroke-width="1.5"/>
+<text x="852" y="225" font-size="12" font-weight="bold" fill="#fff" text-anchor="end">D22</text>
+<circle cx="596" cy="257" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="608" y="261" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="start">VN</text>
+<circle cx="864" cy="257" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="261" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">TX0</text>
+<circle cx="596" cy="293" r="6.5" fill="#9141ac" stroke="#fff" stroke-width="1.5"/>
+<text x="608" y="297" font-size="12" font-weight="bold" fill="#fff" text-anchor="start">D34</text>
+<circle cx="864" cy="293" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="297" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">RX0</text>
+<circle cx="596" cy="329" r="6.5" fill="#008080" stroke="#fff" stroke-width="1.5"/>
+<text x="608" y="333" font-size="12" font-weight="bold" fill="#fff" text-anchor="start">D35</text>
+<circle cx="864" cy="329" r="6.5" fill="#1c71d8" stroke="#fff" stroke-width="1.5"/>
+<text x="852" y="333" font-size="12" font-weight="bold" fill="#fff" text-anchor="end">D21</text>
+<circle cx="596" cy="365" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="608" y="369" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="start">D32</text>
+<circle cx="864" cy="365" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="369" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">D19</text>
+<circle cx="596" cy="401" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="608" y="405" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="start">D33</text>
+<circle cx="864" cy="401" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="405" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">D18</text>
+<circle cx="596" cy="437" r="6.5" fill="#e01b24" stroke="#fff" stroke-width="1.5"/>
+<text x="608" y="441" font-size="12" font-weight="bold" fill="#fff" text-anchor="start">D25</text>
+<circle cx="864" cy="437" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="441" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">D5</text>
+<circle cx="596" cy="473" r="6.5" fill="#2ec27e" stroke="#fff" stroke-width="1.5"/>
+<text x="608" y="477" font-size="12" font-weight="bold" fill="#fff" text-anchor="start">D26</text>
+<circle cx="864" cy="473" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="477" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">TX2</text>
+<circle cx="596" cy="509" r="6.5" fill="#3584e4" stroke="#fff" stroke-width="1.5"/>
+<text x="608" y="513" font-size="12" font-weight="bold" fill="#fff" text-anchor="start">D27</text>
+<circle cx="864" cy="509" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="513" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">RX2</text>
+<circle cx="596" cy="545" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="608" y="549" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="start">D14</text>
+<circle cx="864" cy="545" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="549" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">D4</text>
+<circle cx="596" cy="581" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="608" y="585" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="start">D12</text>
+<circle cx="864" cy="581" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="585" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">D2</text>
+<circle cx="596" cy="617" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="608" y="621" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="start">D13</text>
+<circle cx="864" cy="617" r="4.5" fill="#d4af37" stroke="#fff" stroke-width="0"/>
+<text x="852" y="621" font-size="12" font-weight="normal" fill="#cfd8e3" text-anchor="end">D15</text>
+<circle cx="596" cy="653" r="6.5" fill="#222222" stroke="#fff" stroke-width="1.5"/>
+<text x="608" y="657" font-size="12" font-weight="bold" fill="#fff" text-anchor="start">GND</text>
+<circle cx="864" cy="653" r="6.5" fill="#222222" stroke="#fff" stroke-width="1.5"/>
+<text x="852" y="657" font-size="12" font-weight="bold" fill="#fff" text-anchor="end">GND</text>
+<circle cx="596" cy="689" r="6.5" fill="#ff6b35" stroke="#fff" stroke-width="1.5"/>
+<text x="608" y="693" font-size="12" font-weight="bold" fill="#fff" text-anchor="start">VIN</text>
+<circle cx="864" cy="689" r="6.5" fill="#d62728" stroke="#fff" stroke-width="1.5"/>
+<text x="852" y="693" font-size="12" font-weight="bold" fill="#fff" text-anchor="end">3V3</text>
+<rect x="40" y="105" width="420" height="145" rx="8" fill="#f8f0fc" stroke="#9141ac" stroke-width="2"/>
+<text x="56" y="131" font-size="14" font-weight="bold" fill="#612078" text-anchor="start">Sensor de Iluminación — LDR (ADC1)</text>
+<text x="56" y="151" font-size="11.5" font-weight="normal" fill="#444" text-anchor="start">Divisor: 3.3V → LDR → GPIO 34 → R 10kΩ → GND</text>
+<text x="56" y="173" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Pin ADC1_CH6 (GPIO 34): compatible con Wi-Fi activo</text>
+<text x="56" y="193" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Rango ADC 12 bits: 0..4095 → 0..100%</text>
+<text x="446" y="229" font-size="11.5" font-weight="bold" fill="#612078" text-anchor="end">Nodo Divisor (OUT) → GPIO 34</text>
+<path d="M 460 225 L 505 225 L 505 293 L 596 293" fill="none" stroke="#9141ac" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="40" y="270" width="420" height="130" rx="8" fill="#eefafa" stroke="#008080" stroke-width="2"/>
+<text x="56" y="296" font-size="14" font-weight="bold" fill="#005959" text-anchor="start">Sensor de Movimiento — PIR (HC-SR501 / AM312)</text>
+<text x="56" y="316" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Salida digital 3.3V con ventana de retención de 15 s</text>
+<text x="446" y="333" font-size="11.5" font-weight="bold" fill="#005959" text-anchor="end">Señal OUT → GPIO 35</text>
+<text x="446" y="382" font-size="11.5" font-weight="bold" fill="#ff6b35" text-anchor="end">Alimentación VCC ← 5V (VIN)</text>
+<path d="M 460 329 L 596 329" fill="none" stroke="#008080" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="40" y="420" width="420" height="270" rx="8" fill="#fff8f0" stroke="#c05621" stroke-width="2"/>
+<text x="56" y="446" font-size="14" font-weight="bold" fill="#9c4221" text-anchor="start">LED RGB — Indicador de Modo (Cátodo Común)</text>
+<text x="56" y="466" font-size="11.5" font-weight="normal" fill="#444" text-anchor="start">3× Resistores de 220 Ω en serie · Cátodo (-) a GND</text>
+<path d="M 460 500 L 485 500 L 485 437 L 596 437" fill="none" stroke="#e01b24" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="58" y="504" font-size="11.5" font-weight="bold" fill="#e01b24" text-anchor="start">R (220 Ω) ← GPIO 25 (Rojo: Clima / Amarillo: PIR)</text>
+<path d="M 460 545 L 503 545 L 503 473 L 596 473" fill="none" stroke="#2ec27e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="58" y="549" font-size="11.5" font-weight="bold" fill="#2ec27e" text-anchor="start">G (220 Ω) ← GPIO 26 (Verde: LDR / Amarillo: PIR)</text>
+<path d="M 460 590 L 521 590 L 521 509 L 596 509" fill="none" stroke="#3584e4" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="58" y="594" font-size="11.5" font-weight="bold" fill="#3584e4" text-anchor="start">B (220 Ω) ← GPIO 27 (Azul: Modo Manual)</text>
+<path d="M 596 653 L 540 653 L 540 660 L 460 660" fill="none" stroke="#222222" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="446" y="664" font-size="11.5" font-weight="bold" fill="#222" text-anchor="end">GND Común (LDR, PIR, Cátodo RGB)</text>
+<path d="M 596 689 L 558 689 L 558 378 L 460 378" fill="none" stroke="#ff6b35" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1020" y="105" width="420" height="155" rx="8" fill="#eefbf3" stroke="#26a269" stroke-width="2"/>
+<text x="1038" y="131" font-size="14" font-weight="bold" fill="#1b7a4e" text-anchor="start">Módulo Relé de 1 Canal (Actuador de Potencia)</text>
+<text x="1038" y="153" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Alimentación VCC: 5V (VIN) · Tierra: GND</text>
+<text x="1038" y="173" font-size="11.5" font-weight="normal" fill="#333" text-anchor="start">• Contactos de salida: COM / NO (Normalmente Abierto)</text>
+<text x="1038" y="231" font-size="12" font-weight="bold" fill="#1b7a4e" text-anchor="start">IN ← GPIO 23 (Control con confirmación)</text>
+<path d="M 864 185 L 980 185 L 980 227 L 1020 227" fill="none" stroke="#26a269" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 864 221 L 915 221 L 915 635" fill="none" stroke="#e5a50a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 864 329 L 940 329 L 940 665" fill="none" stroke="#1c71d8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 864 653 L 965 653 L 965 380" fill="none" stroke="#222222" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 864 689 L 990 689 L 990 350" fill="none" stroke="#d62728" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1020" y="285" width="420" height="185" rx="8" fill="#7b2fbe" stroke="#4b1a75" stroke-width="2"/>
+<text x="1038" y="311" font-size="14" font-weight="bold" fill="#fff" text-anchor="start">Sensor Ambiental GY-SHT41 (I²C 0x44)</text>
+<text x="1038" y="331" font-size="11.5" font-weight="normal" fill="#efe6f7" text-anchor="start">Temperatura y Humedad · Mismos pines Práctica 1</text>
+<path d="M 990 350 L 1020 350" fill="none" stroke="#d62728" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="990" cy="350" r="5" fill="#d62728"/>
+<text x="1036" y="354" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="start">VIN (3.3V)</text>
+<path d="M 965 380 L 1020 380" fill="none" stroke="#222222" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="965" cy="380" r="5" fill="#222222"/>
+<text x="1036" y="384" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="start">GND</text>
+<path d="M 915 410 L 1020 410" fill="none" stroke="#e5a50a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="915" cy="410" r="5" fill="#e5a50a"/>
+<text x="1036" y="414" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="start">SCL (GPIO 22)</text>
+<path d="M 940 440 L 1020 440" fill="none" stroke="#1c71d8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="940" cy="440" r="5" fill="#1c71d8"/>
+<text x="1036" y="444" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="start">SDA (GPIO 21)</text>
+<rect x="1020" y="495" width="420" height="200" rx="8" fill="#0b3d91" stroke="#06265c" stroke-width="2"/>
+<text x="1038" y="521" font-size="14" font-weight="bold" fill="#fff" text-anchor="start">Pantalla OLED SSD1306 128×32 (I²C 0x3C)</text>
+<text x="1038" y="541" font-size="11.5" font-weight="normal" fill="#cfe0ff" text-anchor="start">Muestra Modo, Relé y Sensores · Mismos pines P1</text>
+<rect x="1230" y="563" width="190" height="74" rx="4" fill="#000" stroke="#444" stroke-width="2"/>
+<text x="1240" y="583" font-size="12" font-weight="bold" fill="#9fe7ff" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">M:LDR       REL:ON</text>
+<text x="1240" y="621" font-size="24" font-weight="bold" fill="#9fe7ff" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">25.4 C</text>
+<path d="M 990 575 L 1020 575" fill="none" stroke="#d62728" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="990" cy="575" r="5" fill="#d62728"/>
+<text x="1036" y="579" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="start">VCC (3.3V)</text>
+<path d="M 965 605 L 1020 605" fill="none" stroke="#222222" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="965" cy="605" r="5" fill="#222222"/>
+<text x="1036" y="609" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="start">GND</text>
+<path d="M 915 635 L 1020 635" fill="none" stroke="#e5a50a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="915" cy="635" r="5" fill="#e5a50a"/>
+<text x="1036" y="639" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="start">SCL (GPIO 22)</text>
+<path d="M 940 665 L 1020 665" fill="none" stroke="#1c71d8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="940" cy="665" r="5" fill="#1c71d8"/>
+<text x="1036" y="669" font-size="11.5" font-weight="bold" fill="#fff" text-anchor="start">SDA (GPIO 21)</text>
+<rect x="40" y="790" width="1400" height="33" fill="#2c3e50"/>
+<text x="52" y="812" font-size="13" font-weight="bold" fill="#fff" text-anchor="start">Color</text>
+<text x="117" y="812" font-size="13" font-weight="bold" fill="#fff" text-anchor="start">Señal / Función</text>
+<text x="362" y="812" font-size="13" font-weight="bold" fill="#fff" text-anchor="start">Pin ESP32</text>
+<text x="552" y="812" font-size="13" font-weight="bold" fill="#fff" text-anchor="start">Conexión Física en Protoboard</text>
+<rect x="40" y="823" width="1400" height="33" fill="#f4f6f8" stroke="#e0e0e0"/>
+<line x1="54" y1="839" x2="90" y2="839" stroke="#d62728" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="844" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Alimentación 3.3V</text>
+<text x="362" y="844" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">3V3</text>
+<text x="552" y="844" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">VIN del SHT41 · VCC de la OLED · Extremo superior del LDR</text>
+<rect x="40" y="856" width="1400" height="33" fill="#ffffff" stroke="#e0e0e0"/>
+<line x1="54" y1="872" x2="90" y2="872" stroke="#ff6b35" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="877" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Alimentación 5V (USB)</text>
+<text x="362" y="877" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">VIN (5V)</text>
+<text x="552" y="877" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">VCC del Sensor PIR · VCC del Módulo Relé</text>
+<rect x="40" y="889" width="1400" height="33" fill="#f4f6f8" stroke="#e0e0e0"/>
+<line x1="54" y1="905" x2="90" y2="905" stroke="#222222" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="910" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Tierra Común (GND)</text>
+<text x="362" y="910" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GND</text>
+<text x="552" y="910" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">GND de SHT41, OLED, PIR, Relé, R 10kΩ (LDR) y Cátodo LED RGB</text>
+<rect x="40" y="922" width="1400" height="33" fill="#ffffff" stroke="#e0e0e0"/>
+<line x1="54" y1="938" x2="90" y2="938" stroke="#1c71d8" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="943" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Datos I²C (Idéntico P1)</text>
+<text x="362" y="943" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GPIO 21 (D21)</text>
+<text x="552" y="943" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">SDA del Sensor GY-SHT41 (0x44) y SDA de la OLED (0x3C)</text>
+<rect x="40" y="955" width="1400" height="33" fill="#f4f6f8" stroke="#e0e0e0"/>
+<line x1="54" y1="971" x2="90" y2="971" stroke="#e5a50a" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="976" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Reloj I²C (Idéntico P1)</text>
+<text x="362" y="976" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GPIO 22 (D22)</text>
+<text x="552" y="976" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">SCL del Sensor GY-SHT41 (0x44) y SCL de la OLED (0x3C)</text>
+<rect x="40" y="988" width="1400" height="33" fill="#ffffff" stroke="#e0e0e0"/>
+<line x1="54" y1="1004" x2="90" y2="1004" stroke="#9141ac" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="1009" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Entrada Analógica LDR</text>
+<text x="362" y="1009" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GPIO 34 (D34)</text>
+<text x="552" y="1009" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Nodo divisor de tensión (LDR + R 10kΩ) en canal ADC1_CH6</text>
+<rect x="40" y="1021" width="1400" height="33" fill="#f4f6f8" stroke="#e0e0e0"/>
+<line x1="54" y1="1037" x2="90" y2="1037" stroke="#008080" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="1042" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Entrada Digital PIR</text>
+<text x="362" y="1042" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GPIO 35 (D35)</text>
+<text x="552" y="1042" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Salida OUT del Sensor de Movimiento PIR</text>
+<rect x="40" y="1054" width="1400" height="33" fill="#ffffff" stroke="#e0e0e0"/>
+<line x1="54" y1="1070" x2="90" y2="1070" stroke="#e01b24" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="1075" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">LED RGB — Canal Rojo</text>
+<text x="362" y="1075" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GPIO 25 (D25)</text>
+<text x="552" y="1075" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Resistor 220 Ω → Terminal R (Modo Auto Clima / Auto PIR)</text>
+<rect x="40" y="1087" width="1400" height="33" fill="#f4f6f8" stroke="#e0e0e0"/>
+<line x1="54" y1="1103" x2="90" y2="1103" stroke="#2ec27e" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="1108" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">LED RGB — Canal Verde</text>
+<text x="362" y="1108" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GPIO 26 (D26)</text>
+<text x="552" y="1108" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Resistor 220 Ω → Terminal G (Modo Auto LDR / Auto PIR)</text>
+<rect x="40" y="1120" width="1400" height="33" fill="#ffffff" stroke="#e0e0e0"/>
+<line x1="54" y1="1136" x2="90" y2="1136" stroke="#3584e4" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="1141" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">LED RGB — Canal Azul</text>
+<text x="362" y="1141" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GPIO 27 (D27)</text>
+<text x="552" y="1141" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Resistor 220 Ω → Terminal B (Modo Manual)</text>
+<rect x="40" y="1153" width="1400" height="33" fill="#f4f6f8" stroke="#e0e0e0"/>
+<line x1="54" y1="1169" x2="90" y2="1169" stroke="#26a269" stroke-width="5" stroke-linecap="round"/>
+<text x="117" y="1174" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Salida Digital Módulo Relé</text>
+<text x="362" y="1174" font-size="12.5" font-weight="bold" fill="#222" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace">GPIO 23 (D23)</text>
+<text x="552" y="1174" font-size="12.5" font-weight="normal" fill="#222" text-anchor="start">Entrada IN del Módulo Relé (control automático o manual)</text>
+</svg>
